@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="./style.css"/>
+<title>Person-Archive</title>
+</head>
+<body>
+    <header>
+<h1 id="headLine">Person Archive</h1>
+<button id="new">File New Person</button><button id="search">Browse Archive</button>
+    </header>
+    <main>
+<div id="newDiv">
+    <form id="form">
+        <fieldset><h3>Fill in the form</h3></fieldset>
+        <label>First Name</label><input type="text" id="firstName"><br>
+        <label>Last Name</label><input type="text" id="lastName"><br>
+        <label>Date of birth</label><input type="date" id="birthDate"><br>
+        <label>Hobbies (separated with a comma)</label><input type="text" id="hobbies"><br>
+       
+        <button type="button" id="submitBtn">Save</button>
+<p id="thanks">Thank you for your input!</p>
+    </form>
+</div>
+<div id="searchDiv">
+    <fieldset><h3>Display and sort</h3></fieldset>
+   
+    <button id="viewBtn">View All</button>
+    <ul id="ul"></ul>
+    <div id="fullDisplay">
+        <h4 id="infoH"></h4>
+        <p id="infoP"></p>
+        <ul id="infoUl"></ul>
+    </div>
+</div>
+
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
